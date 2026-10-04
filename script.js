@@ -1,6 +1,6 @@
 const defaultHabits = [
     "2 litres of water",
-    "Eat regular, balanced meals",
+    "Eat regular, balanced meals (1800 approx calories)",
     "10,000 steps",
     "30 mins workout",
     "3 hours focused study",
@@ -128,16 +128,16 @@ function isTodayComplete() {
 }
 
 const celebrationMessages = [
-    "YOU ARE DA GOAT 🐐",
+    "YOU ARE DA GOAT!!",
     "yipeeyipeeeyipeeeyipeee 🎉",
     "Damn?! In ONE day? Way to go.",
-    "Okayyy productivity final boss 😭🏆",
+    "Okayyy productivity final boss 😭",
     "Look at you being all responsible and stuff.",
-    "Main character behavior detected ✨",
+    "Main character energy detected ✨",
     "The habits are HABITING today.",
     "No crumbs. You absolutely ate. 💅",
     "POV: you actually did what you said you would.",
-    "Certified locked-in moment 🔒✨"
+    "Certified locked-in moment✨"
 ];
 
 function showRandomCelebrationMessage() {
@@ -216,7 +216,7 @@ function updateStreak() {
         best + (best === 1 ? " day" : " days");
 }
 
-/* Add habit */
+
 
 document.getElementById("addHabitButton").onclick = function() {
     modal.classList.remove("hidden");
@@ -243,7 +243,6 @@ document.getElementById("saveHabit").onclick = function() {
     }
 };
 
-/* Calendar */
 
 document.getElementById("calendarButton").onclick = function() {
     calendarModal.classList.remove("hidden");
@@ -308,7 +307,7 @@ function displayCalendar() {
     }
 }
 
-/* Celebration buttons */
+
 
 document.getElementById("yippeeButton").onclick = function() {
     playYippee();
